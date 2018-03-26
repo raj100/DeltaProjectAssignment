@@ -11,7 +11,7 @@ import UIKit
 class HorizontalViewController:UIViewController,UICollectionViewDelegate,UICollectionViewDataSource{
     
     
-
+    
     @IBOutlet weak var collectionView: UICollectionView!
     var userDetailsArray:NSMutableArray = NSMutableArray.init()
     let dataController = DataController.init()
@@ -39,34 +39,33 @@ class HorizontalViewController:UIViewController,UICollectionViewDelegate,UIColle
         return userDetailsArray.count
     }
     
-     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionCell", for: indexPath) as! UserDetailCollectionViewCell
-        
-        let userDetailsModal:UserDetailsModal = userDetailsArray.object(at: indexPath.row) as! UserDetailsModal
+        print("cell Item\(indexPath.item) Row\(indexPath.row)")
+        let userDetailsModal:UserDetailsModal = userDetailsArray.object(at: indexPath.item) as! UserDetailsModal
         cell.lblName.text = userDetailsModal.name
         cell.lblEmail.text = userDetailsModal.email
         cell.lblCreatedOn.text = "Created On " + userDetailsModal.createdAt
         cell.lblUpdatedOn.text = "Updated On " + userDetailsModal.updatedAt
+        cell.lblId.text = "id \(userDetailsModal.id)"
         if userDetailsModal.image == nil {
             cell.imgDisplayImage.image = nil
-            cell.lblId.text = "id "
             downloadCellImage(indexPath: indexPath)
         }else{
-            cell.lblId.text = "id \(userDetailsModal.id)"
             cell.imgDisplayImage.image = userDetailsModal.image
         }
         return cell
     }
     
     func downloadCellImage(indexPath:IndexPath){
-        var userDetailsModal:UserDetailsModal = userDetailsArray.object(at: indexPath.row) as! UserDetailsModal
+        var userDetailsModal:UserDetailsModal = userDetailsArray.object(at: indexPath.item) as! UserDetailsModal
         dataController.downloadImage(url: userDetailsModal.imageUrl,indexPath:indexPath, imageDataCallbackHandler: { (image,downloadIndexPath) in
+            userDetailsModal.image = image
+            print("on Downloaded Item\(indexPath.item) Row\(indexPath.row)")
+            self.userDetailsArray.replaceObject(at: indexPath.item, with: userDetailsModal)
             if (self.collectionView.indexPathsForVisibleItems.contains(indexPath)){
-                userDetailsModal.image = image
-                self.userDetailsArray.replaceObject(at: indexPath.row, with: userDetailsModal)
                 let cell = self.collectionView.cellForItem(at: indexPath) as! UserDetailCollectionViewCell
                 cell.imgDisplayImage.image = image
-                cell.lblId.text = "id \(userDetailsModal.id)"
             }
         })
     }

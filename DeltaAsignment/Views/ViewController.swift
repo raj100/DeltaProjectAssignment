@@ -16,7 +16,8 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     let dataController = DataController.init()
     
     override func viewDidLoad() {
-        super.viewDidLoad()        
+        super.viewDidLoad()
+        
         // Do any additional setup after loading the view, typically from a nib.
         let activityIndicatorView =  UIActivityIndicatorView.init(activityIndicatorStyle: UIActivityIndicatorViewStyle.whiteLarge)
         activityIndicatorView.color = UIColor.black
@@ -39,10 +40,10 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        let count = userDetailsArray.count
-//        guard count != 0 else{
-//            return 4
-//        }
+        //        let count = userDetailsArray.count
+        //        guard count != 0 else{
+        //            return 4
+        //        }
         return userDetailsArray.count
     }
     
@@ -58,12 +59,11 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         cell.lblEmail.text = userDetailsModal.email
         cell.lblCreatedOn.text = "Created On " + userDetailsModal.createdAt
         cell.lblUpdatedOn.text = "Updated On " + userDetailsModal.updatedAt
+        cell.lblId.text = "id \(userDetailsModal.id)"
         if userDetailsModal.image == nil {
             cell.imgDisplayImage.image = nil
-            cell.lblId.text = "id "
             downloadCellImage(indexPath: indexPath)
         }else{
-            cell.lblId.text = "id \(userDetailsModal.id)"
             cell.imgDisplayImage.image = userDetailsModal.image
         }
         return cell
@@ -72,12 +72,11 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     func downloadCellImage(indexPath:IndexPath){
         var userDetailsModal:UserDetailsModal = userDetailsArray.object(at: indexPath.row) as! UserDetailsModal
         dataController.downloadImage(url: userDetailsModal.imageUrl,indexPath:indexPath, imageDataCallbackHandler: { (image,downloadIndexPath) in
+            userDetailsModal.image = image
+            self.userDetailsArray.replaceObject(at: indexPath.row, with: userDetailsModal)
             if (self.tblUserDetails .indexPathsForVisibleRows?.contains(indexPath))!{
-                userDetailsModal.image = image
-                self.userDetailsArray.replaceObject(at: indexPath.row, with: userDetailsModal)
                 let cell = self.tblUserDetails.cellForRow(at: indexPath) as! UserDetailTableViewCell
                 cell.imgDisplayImage.image = image
-                cell.lblId.text = "id \(userDetailsModal.id)"
             }
         })
     }
