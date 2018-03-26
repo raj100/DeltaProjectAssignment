@@ -1,0 +1,418 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		77261F7C20613B27005ACBEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77261F7B20613B27005ACBEC /* AppDelegate.swift */; };
+		77261F7E20613B27005ACBEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77261F7D20613B27005ACBEC /* ViewController.swift */; };
+		77261F8120613B27005ACBEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77261F7F20613B27005ACBEC /* Main.storyboard */; };
+		77261F8420613B27005ACBEC /* DeltaAsignment.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 77261F8220613B27005ACBEC /* DeltaAsignment.xcdatamodeld */; };
+		77261F8620613B27005ACBEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77261F8520613B27005ACBEC /* Assets.xcassets */; };
+		77261F8920613B27005ACBEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77261F8720613B27005ACBEC /* LaunchScreen.storyboard */; };
+		77261F9220613B4D005ACBEC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77261F9120613B4D005ACBEC /* Constants.swift */; };
+		77261F9520613BEB005ACBEC /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77261F9420613BEB005ACBEC /* DataController.swift */; };
+		77261F9720622B5F005ACBEC /* UserDetailsModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77261F9620622B5F005ACBEC /* UserDetailsModal.swift */; };
+		77261F992063752D005ACBEC /* UserDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77261F982063752D005ACBEC /* UserDetailTableViewCell.swift */; };
+		77261F9B20638D1A005ACBEC /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77261F9A20638D1A005ACBEC /* NetworkController.swift */; };
+		77261F9D2064176B005ACBEC /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77261F9C2064176B005ACBEC /* Utility.swift */; };
+		77261FA020642025005ACBEC /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77261F9F20642025005ACBEC /* Reachability.swift */; };
+		77261FA32068A853005ACBEC /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77261FA22068A853005ACBEC /* HomePageViewController.swift */; };
+		77261FA52068AAEF005ACBEC /* HorizontalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77261FA42068AAEF005ACBEC /* HorizontalViewController.swift */; };
+		77261FA72068B00D005ACBEC /* UserDetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77261FA62068B00D005ACBEC /* UserDetailCollectionViewCell.swift */; };
+		77D25CF62068CF8B00FFD0FE /* ImageCaching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D25CF52068CF8B00FFD0FE /* ImageCaching.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		77261F7820613B26005ACBEC /* DeltaAsignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeltaAsignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		77261F7B20613B27005ACBEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		77261F7D20613B27005ACBEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		77261F8020613B27005ACBEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		77261F8320613B27005ACBEC /* DeltaAsignment.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DeltaAsignment.xcdatamodel; sourceTree = "<group>"; };
+		77261F8520613B27005ACBEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		77261F8820613B27005ACBEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		77261F8A20613B27005ACBEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77261F9120613B4D005ACBEC /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		77261F9420613BEB005ACBEC /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		77261F9620622B5F005ACBEC /* UserDetailsModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsModal.swift; sourceTree = "<group>"; };
+		77261F982063752D005ACBEC /* UserDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailTableViewCell.swift; sourceTree = "<group>"; };
+		77261F9A20638D1A005ACBEC /* NetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
+		77261F9C2064176B005ACBEC /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		77261F9F20642025005ACBEC /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		77261FA22068A853005ACBEC /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		77261FA42068AAEF005ACBEC /* HorizontalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalViewController.swift; sourceTree = "<group>"; };
+		77261FA62068B00D005ACBEC /* UserDetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailCollectionViewCell.swift; sourceTree = "<group>"; };
+		77D25CF52068CF8B00FFD0FE /* ImageCaching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCaching.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		77261F7520613B26005ACBEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		77261F6F20613B26005ACBEC = {
+			isa = PBXGroup;
+			children = (
+				77261F7A20613B26005ACBEC /* DeltaAsignment */,
+				77261F7920613B26005ACBEC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		77261F7920613B26005ACBEC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				77261F7820613B26005ACBEC /* DeltaAsignment.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		77261F7A20613B26005ACBEC /* DeltaAsignment */ = {
+			isa = PBXGroup;
+			children = (
+				77261FA12068A829005ACBEC /* Views */,
+				77261F9E2064200A005ACBEC /* Utils */,
+				77261F9320613B80005ACBEC /* Controllers */,
+				77261F9020613B2E005ACBEC /* Modals */,
+				77261F7B20613B27005ACBEC /* AppDelegate.swift */,
+				77261F7F20613B27005ACBEC /* Main.storyboard */,
+				77261F8520613B27005ACBEC /* Assets.xcassets */,
+				77261F8720613B27005ACBEC /* LaunchScreen.storyboard */,
+				77261F8A20613B27005ACBEC /* Info.plist */,
+				77261F8220613B27005ACBEC /* DeltaAsignment.xcdatamodeld */,
+			);
+			path = DeltaAsignment;
+			sourceTree = "<group>";
+		};
+		77261F9020613B2E005ACBEC /* Modals */ = {
+			isa = PBXGroup;
+			children = (
+				77261F9620622B5F005ACBEC /* UserDetailsModal.swift */,
+				77261F982063752D005ACBEC /* UserDetailTableViewCell.swift */,
+				77261FA62068B00D005ACBEC /* UserDetailCollectionViewCell.swift */,
+			);
+			path = Modals;
+			sourceTree = "<group>";
+		};
+		77261F9320613B80005ACBEC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				77261F9420613BEB005ACBEC /* DataController.swift */,
+				77261F9A20638D1A005ACBEC /* NetworkController.swift */,
+				77D25CF52068CF8B00FFD0FE /* ImageCaching.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		77261F9E2064200A005ACBEC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				77261F9120613B4D005ACBEC /* Constants.swift */,
+				77261F9C2064176B005ACBEC /* Utility.swift */,
+				77261F9F20642025005ACBEC /* Reachability.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		77261FA12068A829005ACBEC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				77261F7D20613B27005ACBEC /* ViewController.swift */,
+				77261FA22068A853005ACBEC /* HomePageViewController.swift */,
+				77261FA42068AAEF005ACBEC /* HorizontalViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		77261F7720613B26005ACBEC /* DeltaAsignment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77261F8D20613B27005ACBEC /* Build configuration list for PBXNativeTarget "DeltaAsignment" */;
+			buildPhases = (
+				77261F7420613B26005ACBEC /* Sources */,
+				77261F7520613B26005ACBEC /* Frameworks */,
+				77261F7620613B26005ACBEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DeltaAsignment;
+			productName = DeltaAsignment;
+			productReference = 77261F7820613B26005ACBEC /* DeltaAsignment.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		77261F7020613B26005ACBEC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = raj;
+				TargetAttributes = {
+					77261F7720613B26005ACBEC = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 77261F7320613B26005ACBEC /* Build configuration list for PBXProject "DeltaAsignment" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 77261F6F20613B26005ACBEC;
+			productRefGroup = 77261F7920613B26005ACBEC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				77261F7720613B26005ACBEC /* DeltaAsignment */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		77261F7620613B26005ACBEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77261F8920613B27005ACBEC /* LaunchScreen.storyboard in Resources */,
+				77261F8620613B27005ACBEC /* Assets.xcassets in Resources */,
+				77261F8120613B27005ACBEC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		77261F7420613B26005ACBEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77261F9B20638D1A005ACBEC /* NetworkController.swift in Sources */,
+				77261F9520613BEB005ACBEC /* DataController.swift in Sources */,
+				77261F9D2064176B005ACBEC /* Utility.swift in Sources */,
+				77261F7E20613B27005ACBEC /* ViewController.swift in Sources */,
+				77261F8420613B27005ACBEC /* DeltaAsignment.xcdatamodeld in Sources */,
+				77261F992063752D005ACBEC /* UserDetailTableViewCell.swift in Sources */,
+				77261F7C20613B27005ACBEC /* AppDelegate.swift in Sources */,
+				77261FA32068A853005ACBEC /* HomePageViewController.swift in Sources */,
+				77261F9220613B4D005ACBEC /* Constants.swift in Sources */,
+				77261FA020642025005ACBEC /* Reachability.swift in Sources */,
+				77261FA72068B00D005ACBEC /* UserDetailCollectionViewCell.swift in Sources */,
+				77D25CF62068CF8B00FFD0FE /* ImageCaching.swift in Sources */,
+				77261FA52068AAEF005ACBEC /* HorizontalViewController.swift in Sources */,
+				77261F9720622B5F005ACBEC /* UserDetailsModal.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		77261F7F20613B27005ACBEC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				77261F8020613B27005ACBEC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		77261F8720613B27005ACBEC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				77261F8820613B27005ACBEC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		77261F8B20613B27005ACBEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		77261F8C20613B27005ACBEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		77261F8E20613B27005ACBEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DeltaAsignment/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = raj.DeltaAsignment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		77261F8F20613B27005ACBEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = DeltaAsignment/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = raj.DeltaAsignment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		77261F7320613B26005ACBEC /* Build configuration list for PBXProject "DeltaAsignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77261F8B20613B27005ACBEC /* Debug */,
+				77261F8C20613B27005ACBEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		77261F8D20613B27005ACBEC /* Build configuration list for PBXNativeTarget "DeltaAsignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77261F8E20613B27005ACBEC /* Debug */,
+				77261F8F20613B27005ACBEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		77261F8220613B27005ACBEC /* DeltaAsignment.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				77261F8320613B27005ACBEC /* DeltaAsignment.xcdatamodel */,
+			);
+			currentVersion = 77261F8320613B27005ACBEC /* DeltaAsignment.xcdatamodel */;
+			path = DeltaAsignment.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 77261F7020613B26005ACBEC /* Project object */;
+}
