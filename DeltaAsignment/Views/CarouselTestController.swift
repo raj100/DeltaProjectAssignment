@@ -41,8 +41,12 @@ class CarouselTestController:UIViewController,iCarouselDataSource,iCarouselDeleg
     }
     
     func carousel(_ carousel: iCarousel, viewForItemAt index: Int, reusing view: UIView?) -> UIView {
-        let cell = Bundle.main.loadNibNamed("CarouselViewContainer", owner: self, options: nil)?.first as! CarouselViewContainer
-        
+        let cell:CarouselViewContainer
+        if view == nil {
+            cell = Bundle.main.loadNibNamed("CarouselViewContainer", owner: self, options: nil)?.first as! CarouselViewContainer
+        }else{
+            cell = view as! CarouselViewContainer
+        }
         let userDetailsModal:UserDetailsModal = userDetailsArray.object(at: index) as! UserDetailsModal
         cell.lblName.text = userDetailsModal.name
         cell.lblEmail.text = userDetailsModal.email
