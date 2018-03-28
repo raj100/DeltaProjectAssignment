@@ -18,7 +18,11 @@ class HorizontalViewController:UIViewController,UICollectionViewDelegate,UIColle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.hidesBackButton = false
+        if(Reachability.isConnectedToNetwork()){
+            self.navigationItem.title = "Horizontal List"
+        }else{
+            self.navigationItem.title = "Offline Mode"
+        }
         // Do any additional setup after loading the view, typically from a nib.
         let activityIndicatorView =  UIActivityIndicatorView.init(activityIndicatorStyle: UIActivityIndicatorViewStyle.whiteLarge)
         activityIndicatorView.color = UIColor.black
@@ -59,7 +63,7 @@ class HorizontalViewController:UIViewController,UICollectionViewDelegate,UIColle
     
     func downloadCellImage(indexPath:IndexPath){
         var userDetailsModal:UserDetailsModal = userDetailsArray.object(at: indexPath.item) as! UserDetailsModal
-        dataController.downloadImage(url: userDetailsModal.imageUrl,indexPath:indexPath, imageDataCallbackHandler: { (image,downloadIndexPath) in
+        dataController.downloadImage(url: userDetailsModal.imageUrl,indexPath:indexPath.item, imageDataCallbackHandler: { (image,downloadIndexPath) in
             userDetailsModal.image = image
             print("on Downloaded Item\(indexPath.item) Row\(indexPath.row)")
             self.userDetailsArray.replaceObject(at: indexPath.item, with: userDetailsModal)

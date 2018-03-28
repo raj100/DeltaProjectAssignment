@@ -19,14 +19,14 @@ class ImageCaching {
     }
     
     func cacheImage(imageUrl url:String,image:UIImage){
-        let sepa = url.split(separator: "/")
-        let key = sepa[sepa.count - 2]
+//        let sepa = url.split(separator: "/")
+//        let key = sepa[sepa.count - 2]
         imageCacheObject.setObject(image , forKey: url as NSString)
     }
     
     func getCachedImage(withUrl url:String)-> UIImage?{
-        let sepa = url.split(separator: "/")
-        let key = sepa[sepa.count - 2]
+//        let sepa = url.split(separator: "/")
+//        let key = sepa[sepa.count - 2]
         let image = imageCacheObject.object(forKey: url as NSString)
         return image
     }

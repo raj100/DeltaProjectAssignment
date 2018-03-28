@@ -14,7 +14,7 @@ class HomePageViewController:UIViewController{
     @IBAction func btnHorizontalViewClicked(_ sender: Any) {
         
         let mainStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-        let vc : UIViewController = mainStoryboard.instantiateViewController(withIdentifier: "horizontalNew")
+        let vc : UIViewController = mainStoryboard.instantiateViewController(withIdentifier: "carouselTest")
         self.navigationController?.pushViewController(vc, animated: true)
         
 //        present(vc, animated: true, completion: nil)

@@ -17,7 +17,11 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        if(Reachability.isConnectedToNetwork()){
+            self.navigationItem.title = "Vertical List"
+        }else{
+            self.navigationItem.title = "Offline Mode"
+        }
         // Do any additional setup after loading the view, typically from a nib.
         let activityIndicatorView =  UIActivityIndicatorView.init(activityIndicatorStyle: UIActivityIndicatorViewStyle.whiteLarge)
         activityIndicatorView.color = UIColor.black
@@ -71,7 +75,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     
     func downloadCellImage(indexPath:IndexPath){
         var userDetailsModal:UserDetailsModal = userDetailsArray.object(at: indexPath.row) as! UserDetailsModal
-        dataController.downloadImage(url: userDetailsModal.imageUrl,indexPath:indexPath, imageDataCallbackHandler: { (image,downloadIndexPath) in
+        dataController.downloadImage(url: userDetailsModal.imageUrl,indexPath:indexPath.item, imageDataCallbackHandler: { (image,downloadIndexPath) in
             userDetailsModal.image = image
             self.userDetailsArray.replaceObject(at: indexPath.row, with: userDetailsModal)
             if (self.tblUserDetails .indexPathsForVisibleRows?.contains(indexPath))!{

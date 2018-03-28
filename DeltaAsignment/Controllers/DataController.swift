@@ -54,7 +54,7 @@ class DataController{
         }
     }
     
-    func downloadImage(url:String,indexPath:IndexPath,imageDataCallbackHandler:@escaping(UIImage,IndexPath)-> Void){
+    func downloadImage(url:String,indexPath:Int,imageDataCallbackHandler:@escaping(UIImage,Int)-> Void){
         let mainQueue = OperationQueue.main
         if let cachedImage:UIImage = ImageCaching.getInstance().getCachedImage(withUrl: url){
             mainQueue.addOperation {
