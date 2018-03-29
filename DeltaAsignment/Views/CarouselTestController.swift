@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class CarouselTestController:UIViewController,iCarouselDataSource,iCarouselDelegate{
+class HorizontalViewController:UIViewController,iCarouselDataSource,iCarouselDelegate{
     
     let dataController = DataController.init()
     var userDetailsArray:NSMutableArray = NSMutableArray.init()

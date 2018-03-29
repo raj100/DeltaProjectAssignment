@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		77261F7C20613B27005ACBEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77261F7B20613B27005ACBEC /* AppDelegate.swift */; };
-		77261F7E20613B27005ACBEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77261F7D20613B27005ACBEC /* ViewController.swift */; };
+		77261F7E20613B27005ACBEC /* VerticalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77261F7D20613B27005ACBEC /* VerticalViewController.swift */; };
 		77261F8120613B27005ACBEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77261F7F20613B27005ACBEC /* Main.storyboard */; };
 		77261F8420613B27005ACBEC /* DeltaAsignment.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 77261F8220613B27005ACBEC /* DeltaAsignment.xcdatamodeld */; };
 		77261F8620613B27005ACBEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77261F8520613B27005ACBEC /* Assets.xcassets */; };
@@ -21,11 +21,9 @@
 		77261F9D2064176B005ACBEC /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77261F9C2064176B005ACBEC /* Utility.swift */; };
 		77261FA020642025005ACBEC /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77261F9F20642025005ACBEC /* Reachability.swift */; };
 		77261FA32068A853005ACBEC /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77261FA22068A853005ACBEC /* HomePageViewController.swift */; };
-		77261FA52068AAEF005ACBEC /* HorizontalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77261FA42068AAEF005ACBEC /* HorizontalViewController.swift */; };
 		77261FA72068B00D005ACBEC /* UserDetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77261FA62068B00D005ACBEC /* UserDetailCollectionViewCell.swift */; };
 		7787A3D6206AA60F004E4673 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7787A3D5206AA60D004E4673 /* iCarousel.m */; };
 		7787A3D9206AA6F3004E4673 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7787A3D8206AA6F3004E4673 /* QuartzCore.framework */; };
-		7787A3DD206B42C4004E4673 /* HorizontalCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7787A3DC206B42C4004E4673 /* HorizontalCarouselView.swift */; };
 		7787A3DF206B48B5004E4673 /* CarouselViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7787A3DE206B48B5004E4673 /* CarouselViewContainer.swift */; };
 		7787A3E1206B4EDB004E4673 /* CarouselTestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7787A3E0206B4EDB004E4673 /* CarouselTestController.swift */; };
 		7787A3E3206B5368004E4673 /* CarouselViewContainer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7787A3E2206B5368004E4673 /* CarouselViewContainer.xib */; };
@@ -35,7 +33,7 @@
 /* Begin PBXFileReference section */
 		77261F7820613B26005ACBEC /* DeltaAsignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeltaAsignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77261F7B20613B27005ACBEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		77261F7D20613B27005ACBEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		77261F7D20613B27005ACBEC /* VerticalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalViewController.swift; sourceTree = "<group>"; };
 		77261F8020613B27005ACBEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		77261F8320613B27005ACBEC /* DeltaAsignment.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DeltaAsignment.xcdatamodel; sourceTree = "<group>"; };
 		77261F8520613B27005ACBEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,13 +47,11 @@
 		77261F9C2064176B005ACBEC /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		77261F9F20642025005ACBEC /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		77261FA22068A853005ACBEC /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
-		77261FA42068AAEF005ACBEC /* HorizontalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalViewController.swift; sourceTree = "<group>"; };
 		77261FA62068B00D005ACBEC /* UserDetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailCollectionViewCell.swift; sourceTree = "<group>"; };
 		7787A3D3206AA60B004E4673 /* DeltaAsignment-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DeltaAsignment-Bridging-Header.h"; sourceTree = "<group>"; };
 		7787A3D4206AA60D004E4673 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
 		7787A3D5206AA60D004E4673 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
 		7787A3D8206AA6F3004E4673 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		7787A3DC206B42C4004E4673 /* HorizontalCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalCarouselView.swift; sourceTree = "<group>"; };
 		7787A3DE206B48B5004E4673 /* CarouselViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselViewContainer.swift; sourceTree = "<group>"; };
 		7787A3E0206B4EDB004E4673 /* CarouselTestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselTestController.swift; sourceTree = "<group>"; };
 		7787A3E2206B5368004E4673 /* CarouselViewContainer.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarouselViewContainer.xib; sourceTree = "<group>"; };
@@ -123,12 +119,10 @@
 		77261F9320613B80005ACBEC /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				7787A3D4206AA60D004E4673 /* iCarousel.h */,
-				7787A3D5206AA60D004E4673 /* iCarousel.m */,
+				7787A3E4206C9A1E004E4673 /* Carousel */,
 				77261F9420613BEB005ACBEC /* DataController.swift */,
 				77261F9A20638D1A005ACBEC /* NetworkController.swift */,
 				77D25CF52068CF8B00FFD0FE /* ImageCaching.swift */,
-				7787A3D3206AA60B004E4673 /* DeltaAsignment-Bridging-Header.h */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -146,10 +140,8 @@
 		77261FA12068A829005ACBEC /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				77261F7D20613B27005ACBEC /* ViewController.swift */,
+				77261F7D20613B27005ACBEC /* VerticalViewController.swift */,
 				77261FA22068A853005ACBEC /* HomePageViewController.swift */,
-				77261FA42068AAEF005ACBEC /* HorizontalViewController.swift */,
-				7787A3DC206B42C4004E4673 /* HorizontalCarouselView.swift */,
 				7787A3E0206B4EDB004E4673 /* CarouselTestController.swift */,
 			);
 			path = Views;
@@ -161,6 +153,16 @@
 				7787A3D8206AA6F3004E4673 /* QuartzCore.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7787A3E4206C9A1E004E4673 /* Carousel */ = {
+			isa = PBXGroup;
+			children = (
+				7787A3D4206AA60D004E4673 /* iCarousel.h */,
+				7787A3D5206AA60D004E4673 /* iCarousel.m */,
+				7787A3D3206AA60B004E4673 /* DeltaAsignment-Bridging-Header.h */,
+			);
+			path = Carousel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,18 +244,16 @@
 				77261F9520613BEB005ACBEC /* DataController.swift in Sources */,
 				7787A3DF206B48B5004E4673 /* CarouselViewContainer.swift in Sources */,
 				77261F9D2064176B005ACBEC /* Utility.swift in Sources */,
-				77261F7E20613B27005ACBEC /* ViewController.swift in Sources */,
+				77261F7E20613B27005ACBEC /* VerticalViewController.swift in Sources */,
 				77261F8420613B27005ACBEC /* DeltaAsignment.xcdatamodeld in Sources */,
 				77261F992063752D005ACBEC /* UserDetailTableViewCell.swift in Sources */,
 				7787A3D6206AA60F004E4673 /* iCarousel.m in Sources */,
 				77261F7C20613B27005ACBEC /* AppDelegate.swift in Sources */,
 				77261FA32068A853005ACBEC /* HomePageViewController.swift in Sources */,
 				77261F9220613B4D005ACBEC /* Constants.swift in Sources */,
-				7787A3DD206B42C4004E4673 /* HorizontalCarouselView.swift in Sources */,
 				77261FA020642025005ACBEC /* Reachability.swift in Sources */,
 				77261FA72068B00D005ACBEC /* UserDetailCollectionViewCell.swift in Sources */,
 				77D25CF62068CF8B00FFD0FE /* ImageCaching.swift in Sources */,
-				77261FA52068AAEF005ACBEC /* HorizontalViewController.swift in Sources */,
 				77261F9720622B5F005ACBEC /* UserDetailsModal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

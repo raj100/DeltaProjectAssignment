@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+class VerticalViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
     
     @IBOutlet weak var tblUserDetails: UITableView!
