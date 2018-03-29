@@ -10,12 +10,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DeltaAsignment/Views/HorizontalViewController.swift"
-            timestampString = "543918054.150269"
+            timestampString = "543990893.3499171"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "47"
             endingLineNumber = "47"
-            landmarkName = "collectionView(_:cellForItemAt:)"
+            landmarkName = "carousel(_:viewForItemAt:reusing:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -26,45 +26,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DeltaAsignment/Views/HorizontalViewController.swift"
-            timestampString = "543918054.150378"
+            timestampString = "543990893.350403"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "65"
             endingLineNumber = "65"
-            landmarkName = "downloadCellImage(indexPath:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "DeltaAsignment.HorizontalViewController.downloadCellImage(indexPath: Foundation.IndexPath) -&gt; ()"
-                  moduleName = "DeltaAsignment"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/airtel/Documents/Projects/IOS/DeltaAsignment/DeltaProjectAssignment/DeltaAsignment/Views/HorizontalViewController.swift"
-                  timestampString = "543918054.330424"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "65"
-                  endingLineNumber = "65"
-                  offsetFromSymbolStart = "108">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (__ObjC.UIImage, Swift.Int) -&gt; () in DeltaAsignment.HorizontalViewController.downloadCellImage(indexPath: Foundation.IndexPath) -&gt; ()"
-                  moduleName = "DeltaAsignment"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/airtel/Documents/Projects/IOS/DeltaAsignment/DeltaProjectAssignment/DeltaAsignment/Views/HorizontalViewController.swift"
-                  timestampString = "543918054.333769"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "65"
-                  endingLineNumber = "65"
-                  offsetFromSymbolStart = "35">
-               </Location>
-            </Locations>
+            landmarkName = "HorizontalViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -74,12 +42,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DeltaAsignment/Views/HorizontalViewController.swift"
-            timestampString = "543918054.150465"
+            timestampString = "543990893.350656"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "70"
             endingLineNumber = "70"
-            landmarkName = "downloadCellImage(indexPath:)"
+            landmarkName = "carousel(_:valueFor:withDefault:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

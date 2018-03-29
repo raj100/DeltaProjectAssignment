@@ -65,7 +65,7 @@ class HorizontalViewController:UIViewController,iCarouselDataSource,iCarouselDel
     
     func carousel(_ carousel: iCarousel, valueFor option: iCarouselOption, withDefault value: CGFloat) -> CGFloat {
         if option == iCarouselOption.spacing{
-            return value * 1.2
+            return value * 3.2
         }
         return value
     }

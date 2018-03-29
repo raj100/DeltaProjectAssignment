@@ -21,12 +21,11 @@
 		77261F9D2064176B005ACBEC /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77261F9C2064176B005ACBEC /* Utility.swift */; };
 		77261FA020642025005ACBEC /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77261F9F20642025005ACBEC /* Reachability.swift */; };
 		77261FA32068A853005ACBEC /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77261FA22068A853005ACBEC /* HomePageViewController.swift */; };
-		77261FA72068B00D005ACBEC /* UserDetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77261FA62068B00D005ACBEC /* UserDetailCollectionViewCell.swift */; };
 		7787A3D6206AA60F004E4673 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7787A3D5206AA60D004E4673 /* iCarousel.m */; };
 		7787A3D9206AA6F3004E4673 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7787A3D8206AA6F3004E4673 /* QuartzCore.framework */; };
 		7787A3DF206B48B5004E4673 /* CarouselViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7787A3DE206B48B5004E4673 /* CarouselViewContainer.swift */; };
-		7787A3E1206B4EDB004E4673 /* CarouselTestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7787A3E0206B4EDB004E4673 /* CarouselTestController.swift */; };
 		7787A3E3206B5368004E4673 /* CarouselViewContainer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7787A3E2206B5368004E4673 /* CarouselViewContainer.xib */; };
+		7787A3E6206C9B9E004E4673 /* HorizontalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7787A3E5206C9B9E004E4673 /* HorizontalViewController.swift */; };
 		77D25CF62068CF8B00FFD0FE /* ImageCaching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77D25CF52068CF8B00FFD0FE /* ImageCaching.swift */; };
 /* End PBXBuildFile section */
 
@@ -47,14 +46,13 @@
 		77261F9C2064176B005ACBEC /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		77261F9F20642025005ACBEC /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		77261FA22068A853005ACBEC /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
-		77261FA62068B00D005ACBEC /* UserDetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailCollectionViewCell.swift; sourceTree = "<group>"; };
 		7787A3D3206AA60B004E4673 /* DeltaAsignment-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DeltaAsignment-Bridging-Header.h"; sourceTree = "<group>"; };
 		7787A3D4206AA60D004E4673 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
 		7787A3D5206AA60D004E4673 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
 		7787A3D8206AA6F3004E4673 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		7787A3DE206B48B5004E4673 /* CarouselViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselViewContainer.swift; sourceTree = "<group>"; };
-		7787A3E0206B4EDB004E4673 /* CarouselTestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselTestController.swift; sourceTree = "<group>"; };
 		7787A3E2206B5368004E4673 /* CarouselViewContainer.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarouselViewContainer.xib; sourceTree = "<group>"; };
+		7787A3E5206C9B9E004E4673 /* HorizontalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalViewController.swift; sourceTree = "<group>"; };
 		77D25CF52068CF8B00FFD0FE /* ImageCaching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCaching.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,7 +108,6 @@
 			children = (
 				77261F9620622B5F005ACBEC /* UserDetailsModal.swift */,
 				77261F982063752D005ACBEC /* UserDetailTableViewCell.swift */,
-				77261FA62068B00D005ACBEC /* UserDetailCollectionViewCell.swift */,
 				7787A3DE206B48B5004E4673 /* CarouselViewContainer.swift */,
 			);
 			path = Modals;
@@ -140,9 +137,9 @@
 		77261FA12068A829005ACBEC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				7787A3E5206C9B9E004E4673 /* HorizontalViewController.swift */,
 				77261F7D20613B27005ACBEC /* VerticalViewController.swift */,
 				77261FA22068A853005ACBEC /* HomePageViewController.swift */,
-				7787A3E0206B4EDB004E4673 /* CarouselTestController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -240,8 +237,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				77261F9B20638D1A005ACBEC /* NetworkController.swift in Sources */,
-				7787A3E1206B4EDB004E4673 /* CarouselTestController.swift in Sources */,
 				77261F9520613BEB005ACBEC /* DataController.swift in Sources */,
+				7787A3E6206C9B9E004E4673 /* HorizontalViewController.swift in Sources */,
 				7787A3DF206B48B5004E4673 /* CarouselViewContainer.swift in Sources */,
 				77261F9D2064176B005ACBEC /* Utility.swift in Sources */,
 				77261F7E20613B27005ACBEC /* VerticalViewController.swift in Sources */,
@@ -252,7 +249,6 @@
 				77261FA32068A853005ACBEC /* HomePageViewController.swift in Sources */,
 				77261F9220613B4D005ACBEC /* Constants.swift in Sources */,
 				77261FA020642025005ACBEC /* Reachability.swift in Sources */,
-				77261FA72068B00D005ACBEC /* UserDetailCollectionViewCell.swift in Sources */,
 				77D25CF62068CF8B00FFD0FE /* ImageCaching.swift in Sources */,
 				77261F9720622B5F005ACBEC /* UserDetailsModal.swift in Sources */,
 			);
@@ -397,7 +393,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = raj.DeltaAsignment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "DeltaAsignment/Controllers/DeltaAsignment-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "DeltaAsignment/Controllers/Carousel/DeltaAsignment-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -414,7 +410,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = raj.DeltaAsignment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "DeltaAsignment/Controllers/DeltaAsignment-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "DeltaAsignment/Controllers/Carousel/DeltaAsignment-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
