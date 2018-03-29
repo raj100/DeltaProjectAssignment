@@ -171,8 +171,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="tjf-3M-T8F"/>
                         <connections>
-                            <outlet property="dataSource" destination="v1Q-YA-dFb" id="c6f-bT-ddX"/>
-                            <outlet property="delegate" destination="v1Q-YA-dFb" id="TXP-Zl-5UW"/>
+                            <outlet property="dataSource" destination="v1Q-YA-dFb" id="21M-yf-FdG"/>
+                            <outlet property="delegate" destination="v1Q-YA-dFb" id="Y7R-VJ-bJD"/>
                         </connections>
                     </view>
                     <connections>

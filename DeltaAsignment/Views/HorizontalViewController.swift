@@ -47,6 +47,7 @@ class HorizontalViewController:UIViewController,iCarouselDataSource,iCarouselDel
         }else{
             cell = view as! CarouselViewContainer
         }
+        cell.translatesAutoresizingMaskIntoConstraints = true
         let userDetailsModal:UserDetailsModal = userDetailsArray.object(at: index) as! UserDetailsModal
         cell.lblName.text = userDetailsModal.name
         cell.lblEmail.text = userDetailsModal.email

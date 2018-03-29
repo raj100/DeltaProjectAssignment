@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DeltaAsignment/Views/HorizontalViewController.swift"
-            timestampString = "543990893.3499171"
+            timestampString = "543991905.563455"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "47"
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DeltaAsignment/Views/HorizontalViewController.swift"
-            timestampString = "543990893.350403"
+            timestampString = "543991905.564068"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "65"
-            endingLineNumber = "65"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
             landmarkName = "HorizontalViewController"
             landmarkType = "3">
          </BreakpointContent>
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DeltaAsignment/Views/HorizontalViewController.swift"
-            timestampString = "543990893.350656"
+            timestampString = "543991905.564515"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "70"
-            endingLineNumber = "70"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
             landmarkName = "carousel(_:valueFor:withDefault:)"
             landmarkType = "7">
          </BreakpointContent>
